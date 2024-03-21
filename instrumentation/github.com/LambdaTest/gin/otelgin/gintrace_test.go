@@ -11,7 +11,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/gin-gonic/gin"
+	"github.com/LambdaTest/gin"
 	"github.com/stretchr/testify/assert"
 
 	"go.opentelemetry.io/otel"

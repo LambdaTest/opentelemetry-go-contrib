@@ -13,11 +13,11 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/gin-gonic/gin"
+	"github.com/LambdaTest/gin"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin"
+	"go.opentelemetry.io/contrib/instrumentation/github.com/LambdaTest/gin/otelgin"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/codes"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"

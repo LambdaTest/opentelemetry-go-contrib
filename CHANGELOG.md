@@ -73,7 +73,7 @@ The next release will require at least [Go 1.21].
 ### Changed
 
 - The semantic conventions used by `go.opentelemetry.io/contrib/instrumentation/github.com/emicklei/go-restful/otelrestful` are upgraded to v1.20.0. (#4320)
-- The semantic conventions used by `go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin` are upgraded to v1.20.0. (#4320)
+- The semantic conventions used by `go.opentelemetry.io/contrib/instrumentation/github.com/LambdaTest/gin/otelgin` are upgraded to v1.20.0. (#4320)
 - The semantic conventions used by `go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux` are upgraded to v1.20.0. (#4320)
 - The semantic conventions used by `go.opentelemetry.io/contrib/instrumentation/github.com/labstack/echo/otelecho` are upgraded to v1.20.0. (#4320)
 - The semantic conventions used by `go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron` are upgraded to v1.20.0. (#4320)
@@ -205,7 +205,7 @@ The next release will require at least [Go 1.21].
 - Do not panic when the HTTP request has the "Expect: 100-continue" header in `go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace`. (#3892)
 - Fix span status value set for non-standard HTTP status codes in modules listed below. (#3966)
   - `go.opentelemetry.io/contrib/instrumentation/github.com/emicklei/go-restful/otelrestful`
-  - `go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin`
+  - `go.opentelemetry.io/contrib/instrumentation/github.com/LambdaTest/gin/otelgin`
   - `go.opentelemetry.io/contrib/instrumentation/github.com/gorilla/mux/otelmux`
   - `go.opentelemetry.io/contrib/instrumentation/github.com/labstack/echo/otelecho`
   - `go.opentelemetry.io/contrib/instrumentation/gopkg.in/macaron.v1/otelmacaron`
@@ -302,7 +302,7 @@ The next release will require at least [Go 1.19].
 ### Added
 
 - Support [Go 1.20]. (#3372)
-- Add `SpanNameFormatter` option to package `go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin`. (#3343)
+- Add `SpanNameFormatter` option to package `go.opentelemetry.io/contrib/instrumentation/github.com/LambdaTest/gin/otelgin`. (#3343)
 
 ### Changed
 
@@ -357,7 +357,7 @@ The next release will require at least [Go 1.19].
 - The `WithLogger` option to `go.opentelemetry.io/contrib/samplers/jaegerremote` to allow users to pass a `logr.Logger` and have operations logged. (#2566)
 - Add the `messaging.url` & `messaging.system` attributes to all appropriate SQS operations in the `go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-sdk-go-v2/otelaws` package. (#2879)
 - Add example use of the metrics signal to `go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/example`. (#2610)
-- [otelgin] Add support for filters to the `go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin` package to provide the way to control which inbound requests are traced. (#2965, #2963)
+- [otelgin] Add support for filters to the `go.opentelemetry.io/contrib/instrumentation/github.com/LambdaTest/gin/otelgin` package to provide the way to control which inbound requests are traced. (#2965, #2963)
 
 ### Fixed
 
@@ -795,7 +795,7 @@ Update dependency on the `go.opentelemetry.io/otel` project to `v1.1.0`.
   - `net/http/httptrace` -> `net/http/httptrace/otelhttptrace`
   - `github.com/labstack/echo` -> `github.com/labstack/echo/otelecho`
   - `github.com/bradfitz/gomemcache` -> `github.com/bradfitz/gomemcache/memcache/otelmemcache`
-  - `github.com/gin-gonic/gin` -> `github.com/gin-gonic/gin/otelgin`
+  - `github.com/LambdaTest/gin` -> `github.com/LambdaTest/gin/otelgin`
   - `github.com/gocql/gocql` -> `github.com/gocql/gocql/otelgocql`
   - `github.com/emicklei/go-restful` -> `github.com/emicklei/go-restful/otelrestful`
   - `github.com/Shopify/sarama` -> `github.com/Shopify/sarama/otelsarama`
@@ -843,7 +843,7 @@ Update dependency on the `go.opentelemetry.io/otel` project to `v1.1.0`.
 
 - Bump google.golang.org/grpc from 1.30.0 to 1.31.0. (#166)
 - Bump go.mongodb.org/mongo-driver from 1.3.5 to 1.4.0 in /instrumentation/go.mongodb.org/mongo-driver. (#170)
-- Bump google.golang.org/grpc in /instrumentation/github.com/gin-gonic/gin. (#173)
+- Bump google.golang.org/grpc in /instrumentation/github.com/LambdaTest/gin. (#173)
 - Bump google.golang.org/grpc in /instrumentation/github.com/labstack/echo. (#176)
 - Bump google.golang.org/grpc from 1.30.0 to 1.31.0 in /instrumentation/github.com/Shopify/sarama. (#179)
 - Bump cloud.google.com/go from 0.61.0 to 0.63.0 in /detectors/gcp. (#181, #199)
@@ -923,7 +923,7 @@ This release upgrades its [go.opentelemetry.io/otel](https://github.com/open-tel
 - Bump go.mongodb.org/mongo-driver from 1.3.2 to 1.3.4 in /instrumentation/go.mongodb.org/mongo-driver. (#76)
 - Bump github.com/stretchr/testify from 1.5.1 to 1.6.1. (#74)
 - Bump gopkg.in/macaron.v1 from 1.3.5 to 1.3.9 in /instrumentation/macaron. (#68)
-- Bump github.com/gin-gonic/gin from 1.6.2 to 1.6.3 in /instrumentation/gin-gonic/gin. (#73)
+- Bump github.com/LambdaTest/gin from 1.6.2 to 1.6.3 in /instrumentation/gin-gonic/gin. (#73)
 - Bump github.com/DataDog/datadog-go from 3.5.0+incompatible to 3.7.2+incompatible in /exporters/metric/datadog. (#78)
 - Replaced `internal/trace/http.go` helpers with `api/standard` helpers from otel-go repo. (#112)
 

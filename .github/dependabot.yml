@@ -38,7 +38,7 @@ updates:
       interval: weekly
       day: sunday
   - package-ecosystem: docker
-    directory: /instrumentation/github.com/gin-gonic/gin/otelgin/example
+    directory: /instrumentation/github.com/LambdaTest/gin/otelgin/example
     labels:
       - dependencies
       - docker
@@ -299,7 +299,7 @@ updates:
       interval: weekly
       day: sunday
   - package-ecosystem: gomod
-    directory: /instrumentation/github.com/gin-gonic/gin/otelgin
+    directory: /instrumentation/github.com/LambdaTest/gin/otelgin
     labels:
       - dependencies
       - go
@@ -308,7 +308,7 @@ updates:
       interval: weekly
       day: sunday
   - package-ecosystem: gomod
-    directory: /instrumentation/github.com/gin-gonic/gin/otelgin/example
+    directory: /instrumentation/github.com/LambdaTest/gin/otelgin/example
     labels:
       - dependencies
       - go
@@ -317,7 +317,7 @@ updates:
       interval: weekly
       day: sunday
   - package-ecosystem: gomod
-    directory: /instrumentation/github.com/gin-gonic/gin/otelgin/test
+    directory: /instrumentation/github.com/LambdaTest/gin/otelgin/test
     labels:
       - dependencies
       - go
